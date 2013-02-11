@@ -1,0 +1,62 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+  To bill a credit card, simply fill out this form:
+  <form>
+    <label>Bill Description:</label>
+    <input type="text" id="desc" /><br>
+    <div id="desc-errors"></div>
+
+
+	<label>Amount:</label>
+    <input type="text" id="amount" /><br>
+        <div id="amount-errors"></div>
+
+	<label>Credit card number</label>
+    <input type="text" id="CCN" /><br>
+    <div id="CCN-errors"></div>
+
+	<label>CCV</label>
+    <input type="text" id="CCV" /><br>
+    <div id="CCV-errors"></div>
+
+	<label>Expiration (mm/yy)</label>
+    <input type="text" id="exp" /><br>
+    <div id="exp-errors"></div>
+
+	<label>Cardholder name</label>
+    <input type="text" id="CHname" /><br>
+    <div id="CHname-errors"></div>
+
+	<label>Billing address</label>
+    <input type="text" id="bAddr" /><br>
+    <div id="bAddr-errors"></div>
+
+	<label>Billing frequency</label>
+    <input type="radio" name="group1" value="One-time" checked/>One time<br>
+    <input type="radio" name="group1" value="Monthly" />Monthly<br>
+    <input type="radio" name="group1" value="Annually" />Annually<br>
+    <div id="-errors"></div>
+
+	<label>Send confirmation e-mail</label>
+    <input type="checkbox" name="Email" value="sendEmail" checked /><br>
+    <div id="-errors"></div>
+
+    <div id="e-mailBlock" style="display: none">
+		<label>E-mail address</label>
+	    <input type="text" id="EmailAddr" /><br>
+	    <div id="EmailAddr-errors"></div>
+	</div>
+
+    <input type="submit" />
+  </form>
+
+
+
+
+</body>
+</html>
